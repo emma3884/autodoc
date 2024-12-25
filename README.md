@@ -35,7 +35,7 @@ Autodoc is a **experimental** toolkit for auto-generating codebase documentation
 
 The generated documentation lives in your codebase, and travels where your code travels. Developers who download your code can use the `doc` command to ask questions about your codebase and get highly specific answers with reference links back to code files. 
 
-In the near future, documentation will be re-indexed as part your CI pipeline, so it is always up-to-date. If your interested in working contributing to this work, see [this issue](https://github.com/context-labs/autodoc/issues/7).
+In the near future, documentation will be re-indexed as part of your CI pipeline, so it is always up-to-date. If you are interested in working contributing to this work, see [this issue](https://github.com/context-labs/autodoc/issues/7).
 
 
 ### Status
@@ -87,7 +87,7 @@ $ git clone https://github.com/context-labs/autodoc.git
 $ cd autodoc
 ```
 
-Right now Autodoc only supports OpenAI. Make sure you have have your OpenAI API key exported in your current session:
+Right now Autodoc only supports OpenAI. Make sure you have your OpenAI API key exported in your current session:
 
 ```bash
 $ export OPENAI_API_KEY=<YOUR_KEY_HERE>
@@ -107,7 +107,7 @@ You're now ready to query documentation for the Autodoc repository:
 
 <img src="https://raw.githubusercontent.com/context-labs/autodoc/master/assets/query.gif" alt="Markdownify" width="60%" style="border-radius:24px;">
 
-This is the core querying experience. It's very basic right now, with plenty of room of improvement. If you're interested in improving the Autodoc CLI querying experience, checkout [this issue](https://github.com/context-labs/autodoc/issues/11).
+This is the core querying experience. It's very basic right now, with plenty of room for improvement. If you're interested in improving the Autodoc CLI querying experience, checkout [this issue](https://github.com/context-labs/autodoc/issues/11).
 
 ### Indexing
 Follow the steps below to generate documentation for your own repository using Autodoc.
@@ -126,7 +126,7 @@ Run the `init` command:
 ```
 doc init
 ```
-You will be prompted to enter the name of your project, GitHub url, and select which GPT models you have access to. If you aren't sure which models you have access to, select the first option. You can also specify your own GPT file/directory prompts that will be used to summarize/analyze the code repoThis command will generate an `autodoc.config.json` file in the root of your project to store the values. This file should be checked in to git.
+You will be prompted to enter the name of your project, GitHub url, and select which GPT models you have access to. If you aren't sure which models you have access to, select the first option. You can also specify your own GPT file/directory prompts that will be used to summarize/analyze the code repo This command will generate an `autodoc.config.json` file in the root of your project to store the values. This file should be checked in to git.
 
 **Note:** Do not skip entering these values or indexing may not work.
 
@@ -149,7 +149,7 @@ For every file in your project, Autodoc calculates the number of tokens in the f
 
 For large projects, the cost can be several hundred dollars. View OpenAI pricing [here](https://openai.com/pricing). 
 
-In the near future, we will support self-hosted models, such as [Llama](https://github.com/facebookresearch/llama) and [Alpaca](https://github.com/tatsu-lab/stanford_alpaca). Read [this issue](https://github.com/context-labs/autodoc/issues/8) if you're interesting in contributing to this work.
+In the near future, we will support self-hosted models, such as [Llama](https://github.com/facebookresearch/llama) and [Alpaca](https://github.com/tatsu-lab/stanford_alpaca). Read [this issue](https://github.com/context-labs/autodoc/issues/8) if you're interested in contributing to this work.
 
 When your repository is done being indexed, you should see a screen like this:
 
